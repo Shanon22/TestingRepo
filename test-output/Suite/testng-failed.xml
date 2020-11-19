@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Testchrome(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="org.test.AdactinCrossBrowser">
+        <methods>
+          <include name="launch"/>
+          <include name="method3"/>
+        </methods>
+      </class> <!-- org.test.AdactinCrossBrowser -->
+    </classes>
+  </test> <!-- Testchrome(failed) -->
+  <test thread-count="5" name="Testff(failed)">
+    <parameter name="Browser" value="ff"/>
+    <classes>
+      <class name="org.test.AdactinCrossBrowser">
+        <methods>
+          <include name="launch"/>
+          <include name="method3"/>
+        </methods>
+      </class> <!-- org.test.AdactinCrossBrowser -->
+    </classes>
+  </test> <!-- Testff(failed) -->
+</suite> <!-- Failed suite [Suite] -->
